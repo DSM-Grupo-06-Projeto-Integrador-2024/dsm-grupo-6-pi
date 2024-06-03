@@ -37,14 +37,12 @@
   cursor: pointer;
 }
 
-/* Header for month and year */
 #monthAndYear {
   text-align: center;
   margin-top: 0;
   font-weight: 600;
 }
 
-/* Navigation buttons */
 .calendarButtons {
   position: relative;
   margin-bottom: 1em;
