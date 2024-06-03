@@ -1,0 +1,41 @@
+body {
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+}
+
+main {
+  height: 100vh;
+  margin-top: 32px;
+}
+
+.applicationBox {
+  background-color: var(--color-1);
+  border-radius: var(--radius-2);
+  padding: 16px;
+  width: 100%;
+}
+
+.applicationBox img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+}
+
+.applicationBox .userResume {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.applicationBox .userInfos {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+}

@@ -3,4 +3,7 @@
 @import url(./globalStyles.css);
 @import url(./container.css);
 @import url(./header.css);
+@import url(./media.css);
+@import url(./menu.css);
+@import url(./calendar.css);
 @import url(./page.css);
