@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>e-DUK - Home</title>
   </head>
   <body>
@@ -29,12 +30,19 @@
     <main class="container">
       <section class="applicationBox">
         <div class="userResume">
-          <div><img src="./assets/img/160801224.jpeg" alt="" /></div>
+          <div>
+            <img src="./assets/img/160801224.jpeg" alt="" />
+          </div>
           <div class="userInfos">
             <p>Nome: Bruno</p>
             <p>Cargo: Secretário</p>
             <p>Matrícula: 123450-44</p>
           </div>
+        </div>
+        <div class="menu__buttons">
+          <button class="button">Matrículas</button>
+          <button class="button">Grade</button>
+          <button class="button">Informações</button>
         </div>
       </section>
 
@@ -67,8 +75,18 @@
           <select id="year"></select>
         </div>
       </section>
+
+      <section class="applicationBox chartBox">
+        <canvas id="chart"></canvas>
+      </section>
     </main>
+
+    <footer>
+      <p>Versão 1.0.0</p>
+      <p>Atualizado em 00/00/0000</p>
+    </footer>
+    <script type="module" src="./scripts/application.js"></script>
+    <script type="module" src="./scripts/calendar.js"></script>
+    <script type="module" src="./scripts/charts.js"></script>
   </body>
-  <script type="module" src="./scripts/application.js"></script>
-  <script type="module" src="./scripts/calendar.js"></script>
 </html>
