@@ -2,6 +2,10 @@
   margin-left: -150%;
 }
 
+#leftMenu {
+  height: 100%;
+}
+
 .menu {
   background-color: aliceblue;
   min-height: 100vh;
