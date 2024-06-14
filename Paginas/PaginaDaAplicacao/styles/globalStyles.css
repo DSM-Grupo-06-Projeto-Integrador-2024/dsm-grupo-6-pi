@@ -12,3 +12,11 @@
   --radius-2: 8px;
   --radius-3: 4px;
 }
+
+button {
+  border-radius: var(--radius-1);
+  height: 3rem;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+}
