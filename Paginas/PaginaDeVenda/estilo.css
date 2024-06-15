@@ -1,7 +1,8 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 body {
-    font-family: Arial, sans-serif;
-}
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+  }
 
 .navbar-brand img {
     width: 130px;
@@ -24,7 +25,7 @@ body {
 
 main {
     padding-top: 50px;
-    padding: 20px;
+   
 }
 
 .navbar-nav .nav-link,
@@ -55,28 +56,31 @@ main {
     border-radius: 10px;
     font-size: 18px;
     font-weight: bold;
-    color: #808080;
+    color: #ffffff;
     background-color: transparent;
-    border: 2px solid #808080;
+    border: 2px solid #ffffff;
     transition: 0.7s ease;
 }
 
 #btn:hover{
-    color: #ffffff;
-    background: #45cbef;
-    border: 2px solid #45cbef;
-    text-shadow: 0 0 1px #808080,
-    0 0 10px #808080;
-    box-shadow: 0 0 5px #45cbef,
-    0 0 20px #45cbef,
-    0 0 50px #45cbef,
-    0 0 100px #45cbef;
+    color: #ececec,;
+    background: #ececec;
+    border: 2px solid #ececec;
+    text-shadow: 0 0 1px #ececec,
+    0 0 10px #ffffff;
+    box-shadow: 0 0 5px #ececec,
+    0 0 20px #ececec,
+    0 0 50px #ececec,
+    0 0 100px #ececec,;
 }
 
 .espaco {
     margin-bottom: 100px;
 }
 
-html {
-    scroll-behavior: smooth;
+
+.espacamento {
+    margin-bottom: 64px;
 }
+
+
