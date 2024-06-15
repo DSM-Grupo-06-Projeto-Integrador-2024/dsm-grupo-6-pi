@@ -51,28 +51,26 @@ main {
             border: none;
         }
 
-#btn {
-    padding: 5px 10px;
-    border-radius: 10px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: transparent;
-    border: 2px solid #ffffff;
-    transition: 0.7s ease;
-}
-
-#btn:hover{
-    color: #ececec,;
-    background: #ececec;
-    border: 2px solid #ececec;
-    text-shadow: 0 0 1px #ececec,
-    0 0 10px #ffffff;
-    box-shadow: 0 0 5px #ececec,
-    0 0 20px #ececec,
-    0 0 50px #ececec,
-    0 0 100px #ececec,;
-}
+        #btn {
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #ffffff; /* Cor do texto inicialmente branca */
+            background-color: transparent;
+            border: 2px solid #ffffff;
+            transition: color 1s ease; /* Transição para mudança de cor */
+        }
+        
+        #btn:hover {
+            color: #000000; /* Cor do texto ao passar o mouse (preto) */
+            background: #ececec;
+            border: 2px solid #ececec;
+            text-shadow: 0 0 1px #ececec, 0 0 10px #ffffff;
+            box-shadow: 0 0 5px #ececec, 0 0 20px #ececec, 0 0 50px #ececec, 0 0 100px #ececec;
+            transition: 1s ease;
+        }
+        
 
 .espaco {
     margin-bottom: 100px;
