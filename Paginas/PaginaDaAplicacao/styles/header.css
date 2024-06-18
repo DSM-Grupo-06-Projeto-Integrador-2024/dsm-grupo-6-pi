@@ -19,10 +19,16 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding: 0 16px;
 }
 
 .logo {
   width: 8rem;
+}
+
+#logout img {
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .magnifying_glass {
@@ -49,22 +55,11 @@ nav {
   justify-content: center;
 }
 
-.search > img {
-  width: 20px;
-  height: 20px;
-}
-
-.search > input {
-  width: 100%;
-  max-width: 400px;
-  height: 2.5rem;
-  border: none;
-  border-radius: var(--radius-1);
-  padding: 0 0.75rem 0 0.75rem;
-}
-
 .header__button {
   background-color: transparent;
   width: 40px;
   height: 40px;
+  padding: 0;
+  display: flex;
+  justify-content: end;
 }

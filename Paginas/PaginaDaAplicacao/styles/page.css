@@ -1,20 +1,6 @@
-body {
-  font-family: "Nunito", sans-serif;
-  font-style: normal;
-}
-
-button {
-  border: none;
-  cursor: pointer;
-  font-family: "Nunito", sans-serif;
-}
-
 main {
-  min-height: max-content;
-}
-
-aside {
-  width: 320px;
+  max-width: 1400px;
+  padding: 0 16px;
 }
 
 #appItems {
@@ -25,15 +11,15 @@ aside {
 
 .applicationBox {
   background-color: var(--color-1);
-  border-radius: var(--radius-2);
+  border-radius: var(--radius-1);
   padding: 16px;
   width: inherit;
-  margin: 16px 0 16px 0;
+  margin: 16px 0 0px 0;
 }
 
 #userImg {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 100%;
 }
 
@@ -61,37 +47,34 @@ aside {
 }
 
 .chartBox {
-  height: 20rem;
-  display: flex;
+  height: 365px;
 }
 
-canvas {
-  height: 100px;
-  width: 100px;
+.chartContainer {
+  height: 80%;
 }
 
-footer {
-  background-color: var(--color-1);
-  min-height: fit-content;
+#chartAndStudents {
+  width: 100%;
+}
+
+.studentsContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  padding: 16px;
-  margin-top: 32px;
+  gap: 16px;
 }
 
-footer img {
-  width: 20px;
-  height: 20px;
-  cursor: pointer;
-}
-
-footer .logos {
+#studentsList {
+  background-color: var(--color-2);
+  padding: 16px 8px;
+  border-radius: var(--radius-2);
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+  max-height: 400px;
 }
 
-footer small {
-  font-size: 12px;
+#studentsList {
+  font-weight: 600;
 }

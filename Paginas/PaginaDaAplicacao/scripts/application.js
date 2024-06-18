@@ -1,54 +1,49 @@
 const leftMenu = () => {
-  const section = document.getElementById("leftMenu");
+  const body = document.querySelector("body");
+  const aside = document.getElementById("leftMenu");
   const hamburguerMenu = document.getElementById("hamburguerMenu");
-
-  const menuSection = document.createElement("section");
-  const divButtons = document.createElement("div");
-  const divCloseButton = document.createElement("div");
-  const buttonClass = document.createElement("button");
-  const buttonSecretary = document.createElement("button");
-  const buttonTeacher = document.createElement("button");
-  const buttonDocuments = document.createElement("button");
-  const buttonClose = document.createElement("button");
-  const closeIcon = document.createElement("img");
-
-  buttonClass.innerText = "Classes";
-  buttonSecretary.innerText = "Secretaria";
-  buttonTeacher.innerText = "Professores";
-  buttonDocuments.innerText = "Documentos";
-  buttonClose.innerText = "Fechar";
-
-  closeIcon.src = "./../assets/icons/xmark-solid.svg";
-
-  buttonClose.id = "closeMenuButton";
-
-  menuSection.classList.add("menu", "menu__hidden");
-  divButtons.classList.add("menu__buttons");
-
-  buttonClose.append(closeIcon);
-
-  divButtons.append(
-    buttonClass,
-    buttonSecretary,
-    buttonTeacher,
-    buttonDocuments
-  );
-  divCloseButton.append(buttonClose);
-
-  menuSection.append(divButtons, divCloseButton);
-  section.append(menuSection);
-
   hamburguerMenu.addEventListener("click", (event) => {
-    menuSection.classList.toggle("menu__hidden");
+    aside.classList.toggle("menu__hidden");
   });
 
-  menuSection.addEventListener("click", (event) => {
-    if (event.currentTarget != event.target) {
-      menuSection.classList.toggle("menu__hidden");
+  body.addEventListener("click", (event) => {
+    if (event.clientX > 250 && !aside.classList.contains("menu__hidden")) {
+      aside.classList.toggle("menu__hidden");
     }
   });
 };
 
+const logout = () => {
+  const logoutButton = document.getElementById("logout");
+  logoutButton.addEventListener("click", (event) => {
+    window.location.replace("../index.html");
+  });
+};
+
+const showModal = () => {
+  const sendSMS = document.getElementById("sendSMS");
+  const modal = document.querySelector(".modalContainer");
+
+  sendSMS.addEventListener("click", (event) => {
+    event.preventDefault();
+    modal.classList.toggle("hidden");
+    console.log("ok");
+  });
+};
+
+const closeModal = () => {
+  const closeModalButton = document.getElementById("closeModal");
+  const modal = document.querySelector(".modalContainer");
+
+  closeModalButton.addEventListener("click", (event) => {
+    modal.classList.toggle("hidden");
+  });
+};
+
 leftMenu();
+logout();
+showModal();
+closeModal();
+getNames();
 
 export { leftMenu };

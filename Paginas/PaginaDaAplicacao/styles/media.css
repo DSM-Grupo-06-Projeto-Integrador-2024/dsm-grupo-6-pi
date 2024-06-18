@@ -1,14 +1,10 @@
 @media (min-width: 640px) {
-  .container {
-    max-width: 1400px;
-  }
-
   nav {
     flex-direction: row;
   }
 
   .search {
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     justify-content: end;
   }
 
@@ -41,15 +37,16 @@
     gap: 32px;
   }
 
-  #leftMenu {
-    width: 260px;
+  aside {
+    width: 20rem;
+    padding-right: 0;
   }
 
   #appItems {
     width: 100%;
   }
 
-  .menu {
+  aside {
     z-index: 0;
     position: relative;
     box-shadow: none;
@@ -69,12 +66,24 @@
   }
 
   .calendarBox,
-  .chartBox {
+  #chartAndStudents {
     max-width: 50%;
+  }
+
+  .chartBox {
+    height: 400px;
+  }
+
+  .chartContainer {
+    height: 85%;
   }
 
   #hamburguerMenu,
   #closeMenuButton {
     display: none;
+  }
+
+  .modalBody {
+    max-width: 800px;
   }
 }
