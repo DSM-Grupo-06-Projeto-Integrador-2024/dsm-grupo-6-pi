@@ -24,8 +24,9 @@ A plataforma será um elo crucial na jornada educacional, gerenciando a rotina e
 - [Rian Scavazza](https://github.com/RianScavazza)
 
 ## Página da Aplicação
-https://pagina-pi-psi.vercel.app/
-https://pagina-produto-omega.vercel.app/
+https://pagina-pi-psi.vercel.app/ <br>
+https://pagina-produto-omega.vercel.app/ 
+
 
 ## Dashboard (tela principal)
 ![image](https://github.com/DSM-Grupo-06-Projeto-Integrador-2024/dsm-grupo-6-pi/assets/110478861/58590396-2c36-4759-8af1-7c9147dbcfc7)
