@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 header {
-    box-shadow: 2px 1.5px 2px rgba(0, 102, 255, 0.9); /* Sombra nas bordas */
+    box-shadow: 2px 1.5px 2px rgba(14, 170, 209, 0.9); /* Sombra nas bordas */
 }
 body {
     font-family: "Nunito", sans-serif;
