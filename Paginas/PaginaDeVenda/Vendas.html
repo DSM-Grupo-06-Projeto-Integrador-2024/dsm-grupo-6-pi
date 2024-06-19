@@ -35,8 +35,8 @@
                             <a href="" class="nav-link" style="color: white;"><strong>Home</strong></a>
                         </li>
                         <li class="nav-item">
-                            <a href="" class="nav-link" style="color: white;"><strong>Contato</strong></a>
-                        </li>
+                            <a href="#contatos" class="nav-link" style="color: white;"><strong>Contato</strong></a>
+                        </li>                        
                         <li class="nav-item dropdown">
                             <a style="color: white;" class="nav-link dropdown-toggle" href="#" id="dropdownServicos" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <strong>Mais</strong>
@@ -55,14 +55,14 @@
             <div class="row d-flex align-items-center justify-content-center" style="min-height: 100vh;">
                 <div class="d-flex align-items-center justify-content-end p-5">
                     <div>
-                        <h1 class="text-light"><i class="fas fa-school"></i> Bem-vindo ao e-DUK</h1>
+                        <h1 class="text-light"><i class="fas fa-school"></i> <strong> Bem-vindo ao e-DUK </strong></h1>
                         <p style="color: white;">
                             O e-DUK é uma plataforma inovadora de gerenciamento <br> escolar, desenvolvida para facilitar a comunicação entre <br> escolas e pais, automatizar tarefas administrativas <br> e oferecer um acompanhamento em tempo real do <br> desempenho acadêmico dos alunos.   
                         </p>
                     </div>
                 </div>
-                <div class="col-md-6 text-center d-flex ms-2 justify-content-end">
-                    <img src="imagens/eduk.png" class="img-fluid" alt="Logo e-DUK">
+                <div>
+                    <img src="imagens/Aplicacao.png" class="img-fluid" alt="Logo e-DUK">
                 </div>
             </div>
         </div>
@@ -91,50 +91,60 @@
         
         <section class="caixa">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-6 d-flex align-items-center">
+                <div class="row align-items-center">
+                    <div class="col-md-6 order-md-2">
+                        <img src="imagens/Acompanhamento.jpg" class="img-fluid" alt="Imagem de comunicação escolar">
+                    </div>
+                    <div class="col-md-6 order-md-1">
                         <div class="text-center">
-                            <h2>Comunicação Eficiente <BR> entre Escola e Pais</h2>
+                            <h2>Comunicação Eficiente
+                                entre Escola e Pais</h2>
                             <p>
                                 Facilite a comunicação entre a escola e os pais com nosso sistema de mensagens automáticas. Envie avisos, notas e faltas diretamente para os celulares dos pais via SMS ou WhatsApp, sem necessidade de conhecimento técnico. Mantenha os pais informados e engajados, promovendo um ambiente escolar mais colaborativo e transparente.
                             </p>
                             <a href="#" class="btn btn-primary">Saiba Mais</a>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <img src="imagens/Acompanhamento.jpg" class="img-fluid" alt="Imagem de comunicação escolar">
-                    </div>
                 </div>
             </div>
         </section>
+        
     </main>
+
+    <footer id="contatos" class="footer">
+        <div>
+            <h3 style="color: #ffff; font-size: 1.5em;"><strong>Sobre Nós</strong></h3><br>
+            <p style="font-size: 0.9em;"> Nossa missão é proporcionar uma gestão escolar eficiente e simplificada, ajudando escolas a crescerem e se desenvolverem continuamente.</p>
+            <p class="copyright" style="font-size: 0.9em;">Copyright ©2024 Todos os direitos reservados | Visite nosso <a href="https://github.com/DSM-Grupo-06-Projeto-Integrador-2024" target="_blank" style="color: #007bff;">GitHub</a> para mais informações</p>
+        </div>
+        <div class="newsletter" style="padding-left: 90px;">
+            <h3 style="color: #ffff;  font-size: 1.5em;"><strong>Serviços</strong></h3>
+            <p style="font-size: 0.9em;"><br>Receba informações importantes e eventos escolares diretamente no seu email</p>
+            <form>
+                <input type="email" placeholder="E-mail" required style="font-size: 0.9em;">
+                <input type="submit" value="→" style="font-size: 0.9em;">
+            </form>
+        </div>
+        <div class="contact" style="padding-left: 90px;">
+            <h3 style="color: #ffff;  font-size: 1.5em;"><strong>Contatos</strong></h3>
+            <p style="font-size: 0.9em;"><br><strong>Endereço: </strong> Rua Jarbas Leme de Godoy <br>
+            <strong>Telefone: </strong> (19) 3541-3004 <br>
+            <strong>Email: </strong>f290acad@cps.sp.gov.br</p>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const linkContato = document.querySelector('a[href="#contatos"]');
+            linkContato.addEventListener("click", function(event) {
+                event.preventDefault();
+                const footer = document.getElementById('contatos');
+                const footerOffset = footer.offsetTop;
+                window.scrollTo({
+                    top: footerOffset,
+                    behavior: "smooth"
+                });
+            });
+        });
+    </script>
 </body>
-
-<footer class="footer">
-    <div class="about">
-        <h3>About Me</h3>
-        <p>Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills,</p>
-        <p class="copyright">Copyright ©2024 All rights reserved | This template is made with ♥ by <a href="https://colorlib.com" target="_blank" style="color: #007bff;">Colorlib</a></p>
-    </div>
-    <div class="newsletter">
-        <h3>Newsletter</h3>
-        <p>Stay updated with our latest trends</p>
-        <form>
-            <input type="email" placeholder="Enter email address" required>
-            <input type="submit" value="→">
-        </form>
-    </div>
-    <div class="social">
-        <h3>Follow Me</h3>
-        <p>Let us be social</p>
-        <a href="https://facebook.com" target="_blank">f</a>
-        <a href="https://twitter.com" target="_blank">t</a>
-        <a href="https://dribbble.com" target="_blank">d</a>
-        <a href="https://behance.net" target="_blank">b</a>
-    </div>
-</footer>
-
-
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaI6qK/Dni
+</html>

@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+header {
+    box-shadow: 2px 1.5px 2px rgba(0, 102, 255, 0.9); /* Sombra nas bordas */
+}
 body {
     font-family: "Nunito", sans-serif;
     font-style: normal;
@@ -89,23 +92,38 @@ main {
 }
   
 .footer {
+    color: #7777;
     display: flex;
     justify-content: space-between;
-    padding: 20px 50px;
-    background-color: #121212;
+    padding: 110px 150px; /* Aumentei o padding para 20px no topo e na base */
+    background-color: #0a0813;
+    height: auto; /* Garante que a altura seja ajustada automaticamente */
+    min-height: 150px; /* Defina uma altura mínima para o footer */
 }
+
+
+
 .footer div {
     flex: 1;
 }
-.footer h3 {
+
+.footer h3, .footer h4 {
     margin-top: 0;
+    font-size: 0.9em;
 }
+
+.footer .about {
+    max-width: 300px;
+}
+
 .newsletter input[type="email"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
     margin-right: 10px;
+    font-size: 0.9em;
 }
+
 .newsletter input[type="submit"] {
     padding: 10px 20px;
     border: none;
@@ -113,17 +131,24 @@ main {
     background-color: #007bff;
     color: white;
     cursor: pointer;
+    font-size: 0.9em;
 }
+
 .social a {
     margin-right: 10px;
     color: #ffffff;
     text-decoration: none;
+    font-size: 0.9em;
 }
-.social a:hover {
+
+.social a {
     color: #007bff;
 }
+
 .copyright {
     margin-top: 10px;
     font-size: 0.9em;
 }
+
+
   
