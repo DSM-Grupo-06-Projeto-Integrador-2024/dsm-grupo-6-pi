@@ -5,8 +5,3 @@ A plataforma será um elo crucial na jornada educacional, gerenciando a rotina e
 Sistema Responsivo para DESKTOP:
 ![image](https://github.com/DSM-Grupo-06-Projeto-Integrador-2024/dsm-grupo-6-pi/assets/110478861/a0b92271-d796-4a56-a2a0-3e24c6ae6b6f)
 
-E MOBILE:
-![image](https://github.com/DSM-Grupo-06-Projeto-Integrador-2024/dsm-grupo-6-pi/assets/110478861/7106d0f0-0bd4-43c9-aeb1-309a505c36b7)
-
-
-
